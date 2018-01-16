@@ -17,7 +17,7 @@ import java.util.Comparator;
 /**
  * Stores the data of an appointment
  */
-public class Appt implements  Comparable<Appt>{
+public class  Appt implements  Comparable<Appt>{
     
     /** Used for knowing whether or not an appointment is valid or not */
     private boolean valid;
@@ -113,7 +113,7 @@ public class Appt implements  Comparable<Appt>{
     	int NumDaysInMonth= CalendarUtil.NumDaysInMonth(startYear,startMonth-1);
     				
     	if(startHour<0 || startHour>23)
-    		this.valid=false;
+    		this.valid=true; //bug changed to false from true
     	else
         	if(startMinute<0 || startMinute>59)
         		this.valid=false;
