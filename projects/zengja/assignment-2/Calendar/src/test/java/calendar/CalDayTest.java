@@ -1,0 +1,36 @@
+package calendar;
+/**
+ *  This class provides a basic set of test cases for the
+ *  CalDay class.
+ */
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class CalDayTest {
+
+	 @Test
+	  public void test01()  throws Throwable  {
+		int day = 12;
+		int month = 12;
+		int year = 2018;
+		GregorianCalendar g = new GregorianCalendar(year, month, day);
+		CalDay cal = new CalDay(g);
+		//cal.setDay(day);
+		//cal.setMonth(month);
+		//cal.setYear(year);
+		//assertEquals(12, cal.getDay());
+		//assertEquals(12, cal.getMonth());
+		//assertEquals(2018, cal.getYear());
+
+	 }
+	 @Test
+	  public void test02()  throws Throwable  {
+
+	 }
+//add more unit tests as you needed	
+}
