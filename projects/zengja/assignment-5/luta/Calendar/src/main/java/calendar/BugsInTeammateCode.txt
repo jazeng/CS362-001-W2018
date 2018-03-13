@@ -1,0 +1,5 @@
+Bug 1: The first bug I found was in Appt.java. This bug appears on line 113 in the function isValid().
+The bug here is if(startHour<=0 || startHour>=23){this.valid=false;}. This should be if(startHour<0 || startHour>=23){this.valid=false}
+
+Bug 2: Another bug I found was in CalDay.java. This bug appears on line 128 in the function setMonth(). The bug is
+month = month; when it should be this.month = month. 
